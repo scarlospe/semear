@@ -1,8 +1,8 @@
 {
   "homepage": "https://scarlospe.github.io/semear",
-  "name": "chatbot-react-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "semear",
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "16.5.2",
