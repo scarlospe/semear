@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c677d4f11ba6b8f41f73c6d3fd0fa16d",
+    "revision": "ec28e941dc01a077b646864164a29203",
     "url": "/semear/index.html"
   },
   {
