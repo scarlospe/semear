@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*Custom ChatBot*/
+.rsc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rsc-content {
+  height: 100% !important;
+}

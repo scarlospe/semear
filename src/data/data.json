@@ -1,0 +1,110 @@
+{
+	"data": [
+		{
+			"id": "1",
+			"message": "Olá, seja bem vindo! Para nós é uma satisfação enorme recebê-lo em nosso portal.",
+			"trigger": "name"
+		},
+		{
+			"id": "name",
+			"message": "Qual o seu nome?",
+			"trigger": "3"
+		},
+		{
+			"id": "3",
+			"user": true,
+			"trigger": "4"
+		},
+		{
+			"id": "4",
+			"message": "Olá {previousValue}, você já ouviu falar em financiamento coletivo?",
+			"trigger": "5"
+		},
+		{
+			"id": "5",
+			"options": [
+				{
+					"value": 1,
+					"label": "Sim",
+					"trigger": "sim"
+				},
+				{
+					"value": 2,
+					"label": "Não",
+					"trigger": "nao"
+				}
+			]
+		},
+		{
+			"id": "sim",
+			"message": "Isso é uma ótima notícia, pois assim, podemos ir direto ao assunto. Nós somos a melhor plataforma de financiamento coletivo que você irá encontrar.",
+			"trigger": "6"
+		},
+		{
+			"id": "6",
+			"message": "Conosco você pode ajudar a desenvolver o agronegócio brasileiro e ainda ganhar uma grana extra.",
+			"trigger": "7"
+
+		},
+		{
+			"id": "7",
+			"message": "Quer saber como? Me diz o seu e-mail que vou te passar todos os detalhes.",
+			"trigger": "email"
+		},
+		{
+			"id": "email",
+			"user": true,
+			"trigger": "8"
+		},
+		{
+			"id": "8",
+			"message": "Dentro de alguns instantes iremos te enviar o e-mail com os detalhes, mas por ora, da uma olhada nesse conteúdo que separamos para você.",
+			"trigger": "link"
+		},
+		{
+			"id": "link",
+			"message": "link",
+			"trigger": "end"
+		},
+		{
+			"id": "nao",
+			"message": "Uhmmm...",
+			"trigger": "9"
+		},
+		{
+			"id": "9",
+			"message": "Já que você não sabe o que é financiado coletivo, vou tentar te explicar rapidinho.",
+			"trigger": "10"
+		},
+		{
+			"id": "10",
+			"message": "É assim, a plataforma publica um projeto, as pessoas se identicam e doam um valor para ajudar a tirar o projeto do papel. O que popularmente chamamos de 'vaquinha'.",
+			"trigger": "11"
+		},
+		{
+			"id": "11",
+			"message": "Só que na nossa plataforma, é mais legal...",
+			"trigger": "12"
+		},
+		{
+			"id": "12",
+			"message": "Você não doa o seu rico dinheirinho, você nos empresta e nós investimos em projetos ligados ao agronegócio.",
+			"trigger": "13"
+		},
+		{
+			"id": "13",
+			"message": "E mensalmente, durante doze meses, você recebe seu percentual de participação.",
+			"trigger": "14"
+		},
+		{
+			"id": "14",
+			"message": "Legal né?",
+			"trigger": "7"
+		},
+		{
+			"id": "end",
+			"message": "Obrigado.",
+			"end": true
+		}
+	]
+}
