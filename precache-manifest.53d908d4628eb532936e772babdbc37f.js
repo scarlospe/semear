@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4505ab4e03d4014210ca297fc062e333",
+    "revision": "dc4178a33a152a0c7bd6f53c9563ec3d",
     "url": "/semear/index.html"
   },
   {
-    "revision": "d0d5015b7b8ea8969308",
+    "revision": "24be9deb9a7cc8dcd5ae",
     "url": "/semear/static/css/main.0c907582.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/semear/static/js/2.555dcc9d.chunk.js"
   },
   {
-    "revision": "d0d5015b7b8ea8969308",
-    "url": "/semear/static/js/main.d24da2a0.chunk.js"
+    "revision": "24be9deb9a7cc8dcd5ae",
+    "url": "/semear/static/js/main.eb853e2b.chunk.js"
   },
   {
     "revision": "152f0484b7eeed91d14d",
