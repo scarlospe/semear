@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/semear/static/css/main.0c907582.chunk.css",
-    "main.js": "/semear/static/js/main.00cf2150.chunk.js",
-    "main.js.map": "/semear/static/js/main.00cf2150.chunk.js.map",
+    "main.js": "/semear/static/js/main.6c3108f9.chunk.js",
+    "main.js.map": "/semear/static/js/main.6c3108f9.chunk.js.map",
     "runtime~main.js": "/semear/static/js/runtime~main.44080123.js",
     "runtime~main.js.map": "/semear/static/js/runtime~main.44080123.js.map",
-    "static/js/2.dfc8b1a7.chunk.js": "/semear/static/js/2.dfc8b1a7.chunk.js",
-    "static/js/2.dfc8b1a7.chunk.js.map": "/semear/static/js/2.dfc8b1a7.chunk.js.map",
+    "static/js/2.53d66b5b.chunk.js": "/semear/static/js/2.53d66b5b.chunk.js",
+    "static/js/2.53d66b5b.chunk.js.map": "/semear/static/js/2.53d66b5b.chunk.js.map",
     "index.html": "/semear/index.html",
-    "precache-manifest.ae2972a933cc9a214a67e2c2085f203b.js": "/semear/precache-manifest.ae2972a933cc9a214a67e2c2085f203b.js",
+    "precache-manifest.2ae37efe8cb1d59bec6f6f9dc45565c4.js": "/semear/precache-manifest.2ae37efe8cb1d59bec6f6f9dc45565c4.js",
     "service-worker.js": "/semear/service-worker.js",
     "static/css/main.0c907582.chunk.css.map": "/semear/static/css/main.0c907582.chunk.css.map"
   }
