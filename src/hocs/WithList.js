@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import {database} from '../utils/firebase';
+import Loading from '../components/Loading';
 
 class WithList extends Component {
 	state = {
-		items: []
+		items: [],
+		loading: true
 	}
 
 	componentDidMount() {
@@ -21,17 +23,15 @@ class WithList extends Component {
 				];
 			});
 
-			this.setState({items: arr})
+			this.setState({items: arr, loading: false})
 		});
 	}
 
-	render() {
+	renderTable() {
 		const {items} = this.state;
 
-		console.log(items)
-
 		return (
-			<table>
+			<table className="table">
 				<thead>
 					<tr>
 						<th>Nome</th>
@@ -50,6 +50,16 @@ class WithList extends Component {
 				</tbody>
 			</table>
 		);
+	}
+
+	renderLoading() {
+		return <Loading />;
+	}
+
+	render() {
+		const {loading} = this.state;
+
+		return !loading ? this.renderTable() : this.renderLoading();
 	}
 }
 

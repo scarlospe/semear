@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {auth} from '../utils/firebase';
 import WithList from './WithList';
+import Loading from '../components/Loading';
 
 class WithAdmin extends Component {
 	state = {
@@ -50,17 +51,57 @@ class WithAdmin extends Component {
 
 	renderForm() {
 		return (
-			<form onSubmit={this.handleSubmit}>
-				<div>
-					<label>Email</label>
-					<input autoComplete="email" name="email" type="text" />
+			<div className="container">
+				<div className="row">
+					<div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
+						<div className="card card-signin my-5">
+							<div className="card-body">
+								<h5 className="card-title text-center">Semear <span className="badge badge-light">CHATBOT</span></h5>
+								<form className="form-signin" onSubmit={this.handleSubmit}>
+									<div className="form-group">
+										<input autoComplete="email" name="email" type="email" id="inputEmail" className="form-control" placeholder="Email address" required autoFocus />
+									</div>
+
+									<div className="form-group">
+										<input autoComplete="password" name="password" type="password" id="inputPassword" className="form-control" placeholder="Password" required />
+									</div>
+
+									<button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div>
-					<label>Senha</label>
-					<input autoComplete="password" name="password" type="password" />
+			</div>
+		);
+	}
+
+	renderContent() {
+		return (
+			<div className="container mt-5">
+				<div className="card">
+					<div className="card-body">
+						<div className="d-flex justify-content-between align-center mb-3">
+							<h5 className="card-title m-0">Semear Users</h5>
+							<button className="btn btn-primary" onClick={this.handleLogout}>Sign out</button>
+						</div>
+
+						<WithList />
+					</div>
 				</div>
-				<button type="submit">entrar</button>
-			</form>
+			</div>
+		);
+	}
+
+	renderLoading() {
+		return (
+			<div className="container mt-5">
+				<div className="card">
+					<div className="card-body">
+						<Loading />
+					</div>
+				</div>
+			</div>
 		);
 	}
 
@@ -68,17 +109,11 @@ class WithAdmin extends Component {
 		const {isAuth, loading} = this.state;
 
 		if (loading) {
-			return <div>loading...</div>
+			return this.renderLoading()
 		}
 
 		return isAuth ? (
-			<div>
-				Bem vindo!
-
-				<button onClick={this.handleLogout}>logout</button>
-
-				<WithList />
-			</div>
+			this.renderContent()
 		) : (
 			this.renderForm()
 		);
