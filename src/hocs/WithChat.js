@@ -6,7 +6,7 @@ import {database} from '../utils/firebase';
 
 const theme = {
   background: '#FFF',
-  fontFamily: 'Helvetica Neue',
+  fontFamily: 'Source Sans Pro',
   headerBgColor: '#2E2D33',
   headerFontColor: '#fff',
   headerFontSize: '15px',
